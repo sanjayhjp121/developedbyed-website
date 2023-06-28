@@ -1,0 +1,932 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link href="https://process.fs.teachablecdn.com/ADNupMnWyR7kCWRvm76Laz/resize=width:32,height:32/https://www.filepicker.io/api/file/KturSQCWR1OsF4anD7gC" rel="icon" type="image/png">
+
+<link href="https://process.fs.teachablecdn.com/ADNupMnWyR7kCWRvm76Laz/resize=width:72,height:72/https://www.filepicker.io/api/file/KturSQCWR1OsF4anD7gC" rel="apple-touch-icon" type="image/png">
+
+<link href="https://process.fs.teachablecdn.com/ADNupMnWyR7kCWRvm76Laz/resize=width:144,height:144/https://www.filepicker.io/api/file/KturSQCWR1OsF4anD7gC" rel="apple-touch-icon" type="image/png">
+
+<link href="https://process.fs.teachablecdn.com/ADNupMnWyR7kCWRvm76Laz/resize=width:320,height:345/https://file-uploads.teachablecdn.com/bb9eb5c798214fd8b34ed2ad9d91a3f2/56fb1a730f404183b9557ef40662a851" rel="apple-touch-startup-image" type="image/png">
+
+<link href="https://process.fs.teachablecdn.com/ADNupMnWyR7kCWRvm76Laz/resize=width:640,height:690/https://file-uploads.teachablecdn.com/bb9eb5c798214fd8b34ed2ad9d91a3f2/56fb1a730f404183b9557ef40662a851" rel="apple-touch-startup-image" type="image/png">
+
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta charset="UTF-8">
+<meta name="csrf-param" content="authenticity_token">
+<meta name="csrf-token" content="Eawk71o/YvEOS5pB59vOH9jJLVN5uD6UZ7VMjJi3rfqk0FTo0cc/c4Wm8A8zhCAVvfrUPNhNY4hdRbo+DZ6jcg==">
+<style type="text/css">:root{--brand_primary: #2b3636;--brand_secondary: #09A59A;--brand_heading: #494949;--brand_text: #494949;--brand_navbar_text: #FFFFFF;--brand_navbar_fixed_text: #FFFFFF;--brand_homepage_heading: #FFFFFF;--brand_course_heading: #FFFFFF;--brand_video_player_color: #2B3636;--font_family:Proxima;} @font-face {
+  font-family: 'Proxima';
+  src: url("//assets.teachablecdn.com/fonts/proxima-nova/proximanova-regular-webfont.eot?1307578394");
+  src: url("//assets.teachablecdn.com/fonts/proxima-nova/proximanova-regular-webfont.eot?iefix") format("eot"), url("//assets.teachablecdn.com/fonts/proxima-nova/proximanova-regular-webfont.woff?1307578394") format("woff"), url("//assets.teachablecdn.com/fonts/proxima-nova/proximanova-regular-webfont.ttf?1307578394") format("truetype"), url("//assets.teachablecdn.com/fonts/proxima-nova/proximanova-regular-webfont.svg#webfont2rpW2ohz") format("svg");
+  font-display: swap; }
+
+@font-face {
+  font-family: 'Proxima';
+  font-style: italic;
+  src: url("//assets.teachablecdn.com/fonts/proxima-nova/proximanova-regitalic-webfont.eot?1307578394");
+  src: url("//assets.teachablecdn.com/fonts/proxima-nova/proximanova-regitalic-webfont.eot?iefix") format("eot"), url("//assets.teachablecdn.com/fonts/proxima-nova/proximanova-regitalic-webfont.woff?1307578394") format("woff"), url("//assets.teachablecdn.com/fonts/proxima-nova/proximanova-regitalic-webfont.ttf?1307578394") format("truetype"), url("//assets.teachablecdn.com/fonts/proxima-nova/proximanova-regitalic-webfont.svg#webfont2rpW2ohz") format("svg");
+  font-display: swap; }
+
+@font-face {
+  font-family: 'Proxima';
+  font-weight: 300;
+  src: url("//assets.teachablecdn.com/fonts/proxima-nova/proximanova-light-webfont.eot?1307578394");
+  src: url("//assets.teachablecdn.com/fonts/proxima-nova/proximanova-light-webfont.eot?iefix") format("eot"), url("//assets.teachablecdn.com/fonts/proxima-nova/proximanova-light-webfont.woff?1307578394") format("woff"), url("//assets.teachablecdn.com/fonts/proxima-nova/proximanova-light-webfont.ttf?1307578394") format("truetype"), url("//assets.teachablecdn.com/fonts/proxima-nova/proximanova-light-webfont.svg#webfont2rpW2ohz") format("svg");
+  font-display: swap; }
+
+@font-face {
+  font-family: 'Proxima';
+  font-weight: 600;
+  src: url("//assets.teachablecdn.com/fonts/proxima-nova/proximanova-semibold-webfont.eot?1307578394");
+  src: url("//assets.teachablecdn.com/fonts/proxima-nova/proximanova-semibold-webfont.eot?iefix") format("eot"), url("//assets.teachablecdn.com/fonts/proxima-nova/proximanova-semibold-webfont.woff?1307578394") format("woff"), url("//assets.teachablecdn.com/fonts/proxima-nova/proximanova-semibold-webfont.ttf?1307578394") format("truetype"), url("//assets.teachablecdn.com/fonts/proxima-nova/proximanova-semibold-webfont.svg#webfont2rpW2ohz") format("svg");
+  font-display: swap; }
+
+@font-face {
+  font-family: 'Proxima';
+  font-weight: 600;
+  font-style: italic;
+  src: url("//assets.teachablecdn.com/fonts/proxima-nova/proximanova-semibolditalic-webfont.eot?1307578394");
+  src: url("//assets.teachablecdn.com/fonts/proxima-nova/proximanova-semibolditalic-webfont.eot?iefix") format("eot"), url("//assets.teachablecdn.com/fonts/proxima-nova/proximanova-semibolditalic-webfont.woff?1307578394") format("woff"), url("//assets.teachablecdn.com/fonts/proxima-nova/proximanova-semibolditalic-webfont.ttf?1307578394") format("truetype"), url("//assets.teachablecdn.com/fonts/proxima-nova/proximanova-semibolditalic-webfont.svg#webfont2rpW2ohz") format("svg");
+  font-display: swap; }
+
+@font-face {
+  font-family: 'Proxima';
+  font-weight: bold;
+  src: url("//assets.teachablecdn.com/fonts/proxima-nova/proximanova-bold-webfont.eot?1307578394");
+  src: url("//assets.teachablecdn.com/fonts/proxima-nova/proximanova-bold-webfont.eot?iefix") format("eot"), url("//assets.teachablecdn.com/fonts/proxima-nova/proximanova-bold-webfont.woff?1307578394") format("woff"), url("//assets.teachablecdn.com/fonts/proxima-nova/proximanova-bold-webfont.ttf?1307578394") format("truetype"), url("//assets.teachablecdn.com/fonts/proxima-nova/proximanova-bold-webfont.svg#webfont2rpW2ohz") format("svg");
+  font-display: swap; }
+
+@font-face {
+  font-family: 'Proxima';
+  font-weight: bold;
+  font-style: italic;
+  src: url("//assets.teachablecdn.com/fonts/proxima-nova/proximanova-boldit-webfont.eot?1307578394");
+  src: url("//assets.teachablecdn.com/fonts/proxima-nova/proximanova-boldit-webfont.eot?iefix") format("eot"), url("//assets.teachablecdn.com/fonts/proxima-nova/proximanova-boldit-webfont.woff?1307578394") format("woff"), url("//assets.teachablecdn.com/fonts/proxima-nova/proximanova-boldit-webfont.ttf?1307578394") format("truetype"), url("//assets.teachablecdn.com/fonts/proxima-nova/proximanova-boldit-webfont.svg#webfont2rpW2ohz") format("svg");
+  font-display: swap; }
+
+@font-face {
+  font-family: 'Proxima';
+  font-weight: 900;
+  src: url("//assets.teachablecdn.com/fonts/proxima-nova/proximanova-extrabold-webfont.eot?1307578394");
+  src: url("//assets.teachablecdn.com/fonts/proxima-nova/proximanova-extrabold-webfont.eot?iefix") format("eot"), url("//assets.teachablecdn.com/fonts/proxima-nova/proximanova-extrabold-webfont.woff?1307578394") format("woff"), url("//assets.teachablecdn.com/fonts/proxima-nova/proximanova-extrabold-webfont.ttf?1307578394") format("truetype"), url("//assets.teachablecdn.com/fonts/proxima-nova/proximanova-extrabold-webfont.svg#webfont2rpW2ohz") format("svg");
+  font-display: swap; }
+</style>
+<link rel="stylesheet" media="screen" href="https://fedora.teachablecdn.com/assets/pages-47a7c134d21218c7a18c3e5742d3086186841a506614ffc093debb8dda650235.css">
+<style>body{
+    overflow-x:hidden;
+}
+
+.featured-product-card__content__title{
+  color: #494949
+}
+
+.featured-product-card__content__subtitle{
+  color: #494949
+}
+.featured-product-card__author__name{
+   color: #494949
+}</style>
+<title>developedbyed | Programming and Design Courses made fun and</title>
+<meta name="description" content="Learn a wide range of web and app technologies. From Web Development with HTML, CSS and Javascript to designing web pages with Figma.">
+<link rel="canonical" href="https://developedbyed.com/p/home">
+<meta property="og:description" content="Learn a wide range of web and app technologies. From Web Development with HTML, CSS and Javascript to designing web pages with Figma.">
+<meta property="og:image" content="https://www.filepicker.io/api/file/e3JfpP8WTraGudQry36M">
+<meta property="og:title" content="developedbyed | Programming and Design Courses made fun and affordable.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://developedbyed.com/p/home">
+<meta name="brand_video_player_color" content="#2B3636">
+<meta name="site_title" content="developedbyed | Creative Programming and Design Courses">
+<script src="js/external-E-v1.js"></script>
+<script src="js/recaptcha-api.js" async defer></script>
+
+
+      <meta name="asset_host" content="https://fedora.teachablecdn.com">
+     <script src="js/packs-pages--a7413b65faa8fae5ed0f.js"></script>
+<meta id="iris-url" data-iris-url="https://eventable.teachable.cloud">
+<script type="text/javascript">
+  window.heap=window.heap||[],heap.load=function(e,t){window.heap.appid=e,window.heap.config=t=t||{};var r=document.createElement("script");r.type="text/javascript",r.async=!0,r.src="https://cdn.heapanalytics.com/js/heap-"+e+".js";var a=document.getElementsByTagName("script")[0];a.parentNode.insertBefore(r,a);for(var n=function(e){return function(){heap.push([e].concat(Array.prototype.slice.call(arguments,0)))}},p=["addEventProperties","addUserProperties","clearEventProperties","identify","resetIdentity","removeEventProperty","setEventProperties","track","unsetEventProperty"],o=0;o<p.length;o++)heap[p[o]]=n(p[o])},heap.load("318805607");
+  window.heapShouldTrackUser = true;
+</script>
+
+
+<script type="text/javascript">
+  var _user_id = ''; // Set to the user's ID, username, or email address, or '' if not yet known.
+  var _session_id = '700b3d37ade1a2cccba019eb992f35eb'; // Set to a unique session ID for the visitor's current browsing session.
+
+  var _sift = window._sift = window._sift || [];
+  _sift.push(['_setAccount', 'b0151b2153']);
+  _sift.push(['_setUserId', _user_id]);
+  _sift.push(['_setSessionId', _session_id]);
+  _sift.push(['_trackPageview']);
+
+  (function() {
+    function ls() {
+      var e = document.createElement('script');
+      e.src = 'https://cdn.sift.com/s.js';
+      document.body.appendChild(e);
+    }
+    if (window.attachEvent) {
+      window.attachEvent('onload', ls);
+    } else {
+      window.addEventListener('load', ls, false);
+    }
+  })();
+</script>
+
+
+<!-- Global site tag (gtag.js) - Google Ads: 926383889 -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=AW-926383889"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'AW-926383889');
+</script>
+
+
+
+<script>
+  if(typeof ga != 'function') {
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+  }
+  ga('create', 'UA-44397410-1', 'auto', {'name': 'fedoraTracker', 'allowLinker': true});
+  ga('fedoraTracker.set', 'anonymizeIp', false);
+  ga('fedoraTracker.require', 'linker');
+  ga('fedoraTracker.linker:autoLink', ['developedbyed.com',  'sso.teachable.com'], false, true );
+  ga('fedoraTracker.require', 'ecommerce');
+  ga('fedoraTracker.require', 'ec');
+  ga('fedoraTracker.send', 'pageview');
+  ga('create', 'UA-44397410-4', 'auto', {'name': 'teachableTracker', 'allowLinker': true});
+  ga('teachableTracker.set', 'anonymizeIp', false);
+  ga('teachableTracker.require', 'linker');
+  ga('teachableTracker.linker:autoLink', ['developedbyed.com', 'sso.teachable.com'], false, true );
+  ga('teachableTracker.require', 'ecommerce');
+  ga('teachableTracker.require', 'ec');
+  ga('teachableTracker.send', 'pageview');
+</script>
+
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+  <script async src="js/669835187-api.js"></script></head>
+  <body class="revamped_lecture_player">
+          <meta http-content="IE=Edge" http-equiv="X-UA-Compatible">
+      <meta content="width=device-width,initial-scale=1.0,user-scalable=no" name="viewport">
+<meta id="fedora-keys" data-commit-sha="dc61ec2eedda53afd20753e31024e6c567f1c4ee" data-env="production" data-sentry-public-dsn="https://8149a85a83fa4ec69640c43ddd69017d@sentry.io/120346" data-stripe="pk_live_hkgvgSBxG4TAl3zGlXiB1KUX" data-track-all-ahoy="false" data-track-changes-ahoy="false" data-track-clicks-ahoy="false" data-track-sumbits-ahoy="false" data-filepicker="ADNupMnWyR7kCWRvm76Laz" data-iris-url="https://eventable.teachable.cloud"><meta id="fedora-data" data-report-card="{}" data-course-ids="[]" data-completed-lecture-ids="[]" data-school-id="357209" data-school-launched="true" data-preview="logged_out" data-turn-off-fedora-branding="true" data-plan-supports-whitelabeling="true" data-powered-by-text="Powered by" data-asset-path="//https://fedora.teachablecdn.com/assets/footer/teachable-logomark-white-31d2296978598bacace50e6d48a2e1223c20a9b074af424acdd465676f81560f.svg" data-school-preferences='{"ssl_forced":"true","anonymize_ips":"false","bazaar_enabled":"false","paypal_enabled":"true","autoplay_lectures":"true","comments_threaded":"true","course_blocks_beta":"true","eu_vat_tax_enabled":"false","legacy_back_office":"false","themeable_disabled":"false","back_office_enabled":"true","comments_moderation":"false","eu_vat_tax_eligible":"true","charge_exclusive_tax":"true","send_receipts_emails":"true","autocomplete_lectures":"true","class_periods_enabled":"false","authors_can_manage_pbc":"true","css_properties_enabled":"false","preenrollments_enabled":"false","new_text_editor_enabled":"true","require_terms_agreement":"true","send_new_comment_emails":"true","send_drip_content_emails":"true","ssl_forced_from_creation":"true","turn_off_fedora_branding":"true","allow_comment_attachments":"true","authors_can_email_students":"true","authors_can_manage_coupons":"true","teachable_accounts_enabled":"true","teachable_payments_enabled":"true","authors_can_import_students":"false","authors_can_publish_courses":"true","internal_subscriptions_beta":"true","recaptcha_enabled_on_signup":"true","tax_form_collection_enabled":"false","display_vat_inclusive_prices":"false","single_page_checkout_enabled":"true","authors_can_set_course_prices":"true","send_lead_confirmation_emails":"true","affiliate_cookie_duration_days":"365","authors_can_issue_certificates":"true","store_student_cards_separately":"true","authors_can_manage_certificates":"true","authors_can_manage_course_pages":"true","prevent_new_coupon_applications":"true","disable_js_course_event_tracking":"false","exclusive_vat_on_custom_gateways":"true","is_edit_site_onboarding_complete":"false","send_certificate_issuance_emails":"true","owner_teachable_accounts_required":"true","prevent_payment_plan_cancellation":"true","send_subscription_reminder_emails":"true","automatically_add_disqus_attachments":"true","recalc_course_pct_on_lecture_publish":"false","send_confirmation_instructions_emails":"true","send_limited_time_unenrollment_emails":"true","turn_off_myteachable_sign_up_branding":"true"}' data-accessible-features='["bulk_enroll_students","manually_importing_users","native_certificates","earnings_statements","teachable_payments","teachable_u","course_compliance","page_editor_v2","certificates_editor_v2","drip_content","custom_domain","coupons","graded_quizzes","email","course_reports","webhooks","integrations","zapier_action_create_user","teachable_payments_payout_view","upsells","facebook_pixel","user_search_filters","user_tags","multiple_course_pages","proration_upgrade_flow","cross_border_payments","limited_time_enrollments","sales_tax_on_student_checkout","new_device_confirmation","elasticsearch_users","elasticsearch_transactions","reset_progress","fraud_warnings","paypal_through_tp","new_creator_checkout","circle_oauth"]' data-course-data="{}"><meta id="analytics-keys" name="analytics" data-analytics='{"Google Analytics":{"trackingId":"UA-153506181-1","enhancedEcommerce":true,"sendUserId":true,"schoolDomain":"developedbyed.com","anonymizeIp":true}}'>
+    
+    <div class="root" onclick="offMenu(event)">
+      
+        <!-- Preview bar -->
+        
+
+
+
+      
+      
+        <!-- HEADER -->
+<a id="top" href="developedbyed.html"></a>
+
+<style id="ncs">
+  :root {
+    
+    --header_width: 960px;
+  }
+</style>
+
+<header id="header" class="header header-sticky">
+  <!-- Navbar -->
+  <nav class="navbar is-not-signed-in is-homepage  at-top" id="navbar" role="navigation">
+    <div class="navbar__header">
+      <!-- Site logo -->
+      
+        <a class="navbar__header__logolink" href="developedbyed.html">
+          <img src="images/file-e3JfpP8WTraGudQry36M" alt="developedbyed | Creative Programming and Design Courses" srcset="https://process.fs.teachablecdn.com/ADNupMnWyR7kCWRvm76Laz/resize=height:120/https://www.filepicker.io/api/file/e3JfpP8WTraGudQry36M 2x">
+        </a>
+        
+      <!-- Header Menu -->
+      <div class="navbar__menu">
+          <button for="f-toggle" tabindex="0" role="button" id="hamburger" class="hamburger" aria-label="Toggle navigation" onclick="toggleMenu('hamburger-menu')">
+          <span></span>
+          </button>
+          <ul class="navbar__menu__list menu hidden" id="hamburger-menu" role="menu" aria-describedby="hamburger" tabindex="0">
+  
+  <li>
+    
+    <a href="https://teespring.com/stores/developedbyed" target="_blank">
+      Merch Store
+    </a>
+    
+  </li>
+  
+
+  <!-- If more than 5 links, collapse the rest in a dropdown -->
+  
+  
+    
+      <li>
+        <a href="sign_in.html">
+          Login
+        </a>
+      </li>
+    
+    
+      <li>
+        <a href="sign_up.html">
+          Sign Up
+        </a>
+      </li>
+    
+  
+</ul>
+
+      </div>
+    </div>
+  </nav>
+</header>
+
+      
+      <main class="view-school page-layout-v2 main">
+        
+  
+
+  
+
+  
+
+  
+    <div id="blocks" data-ss-school-id="357209" class="blocks-page blocks-page-blank_page_v2 ">
+  
+  
+    <!-- in live preview mode we add an extra wrapper around each block, and remove the `block.show` check -->
+
+  
+    
+
+      <style type="text/css">.b-102710007-top { padding-top: 22.400000000000002px; } .b-102710007-bottom { padding-bottom: 22.400000000000002px; } .b-102710007-alignment { text-align: center; } .b-102710007-content_width { max-width: 668px; } .b-102710007-image_overlay { opacity: 0.5; } .b-102710007-background_color { background-color: #232323; } .b-102710007-heading_text_color { color: #FFFFFF; } .b-102710007-button_border_radius { border-radius: 25px; } .b-102710007-subheading_text_color { color: #FFFFFF; }</style>
+
+      
+        <div class="course-block block banner  " id="block-102710007">
+      
+
+        
+
+
+
+
+
+
+
+
+  <style>
+    
+      .banner .b-102710007-heading_text_color {
+        color: #FFFFFF
+      }
+    
+
+    
+      .banner .b-102710007-subheading_text_color {
+        color: #FFFFFF
+      }
+    
+
+    .banner__button.b-102710007-button_border_radius {
+      border-radius: 25;
+    }
+
+    @media screen and (min-width: 768px) {
+      .b-102710007-top {
+        padding-top: 40px;
+      }
+      .b-102710007-bottom {
+        padding-bottom: 40px;
+      }
+    }
+    .bl {
+      width: 100%;
+    }
+  </style>
+
+<section class="banner b-102710007-background_color">
+  <img src="images/y7ws7yTMTBaPrPlGmgHk" alt="" data-target="block.data.image_url " class="b-102710007-image_overlay">
+  <div class="bl">
+    <div class="banner__inner b-102710007-alignment b-102710007-bottom b-102710007-top b-102710007-content_width">
+      <div class="banner__heading-group">
+        
+          <div data-target="block.data.heading_text" class="header b-102710007-heading_text_color rich-text">
+            <h2><strong>Coding and design courses </strong></h2>
+          </div>
+        
+        
+          <div data-target="block.data.subheading_text" class="subheader b-102710007-subheading_text_color rich-text">
+            <p><strong>Learn programming technologies like HTML &amp; CSS, Javascript, React and more.</strong></p>
+          </div>
+        
+      </div>
+      
+        <div class="banner__button-wrapper">
+          <a href="courses.html" target="_blank" rel="noopener">
+            <button class="banner__button b-102710007-button_border_radius base-button" data-target="block.data.button_text">
+              View Courses
+            </button>
+          </a>
+        </div>
+      
+    </div>
+  </div>
+</section>
+
+
+      
+        </div>
+      
+
+    
+  
+
+
+  
+    <!-- in live preview mode we add an extra wrapper around each block, and remove the `block.show` check -->
+
+  
+    
+
+      <style type="text/css">.b-102710008-top { padding-top: 44.800000000000004px; } .b-102710008-bottom { padding-bottom: 44.800000000000004px; } .b-102710008-card_style { --card_style: grid; } .b-102710008-gutter_width { --gutter-width: 50px; } .b-102710008-content_width { max-width: 960px; } .b-102710008-heading_color { color: #36414D; } .b-102710008-background_color { background-color: #eef1f1; } .b-102710008-card_border_color { border-color: #000000; } .b-102710008-card_border_width { border-width: 0px; } .b-102710008-card_border_radius { border-radius: 20px; } .b-102710008-card_text_alignment { text-align: center; } .b-102710008-button_border_radius { border-radius: 10px; } .b-102710008-card_background_color { background-color: #FFFFFF; }</style>
+
+      
+        <div class="course-block block featured_products  " id="block-102710008">
+      
+
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<style>
+  .block__featured-products__heading_text.b-102710008-heading_color {
+    color: #36414D;
+  }
+  .block__featured-products.b-102710008-background_color {
+    background-color: #eef1f1;
+  }
+  .block__featured-products .b-102710008-card_border_color,
+  .block__featured-products .b-102710008-card_border_width {
+    border: 0px solid #000000;
+  }
+  .block__featured-products .b-102710008-card_text_alignment .featured-product-card__content__title,
+  .block__featured-products .b-102710008-card_text_alignment .course-card__content__subtitle {
+    text-align: center;
+  }
+  .featured-product-card.b-102710008-card_background_color {
+    background-color: #FFFFFF;
+  }
+  .block__featured-products__button .b-102710008-button_border_radius {
+    border-radius: 10px;
+  }
+  @media screen and (min-width: 768px) {
+    .b-102710008-top {
+      padding-top: 80px;
+    }
+    .b-102710008-bottom {
+      padding-bottom: 80px;
+    }
+    
+    .b-102710008-gutter_width .block__columns, .b-102710008-gutter_width .block__columns__fixed {
+        grid-column-gap: 50px;
+    }
+    
+  }
+</style>
+
+
+
+  <section class="bl block__featured-products block__featured-products__cards block__columns-per-row--3 b-102710008-top b-102710008-bottom b-102710008-gutter_width b-102710008-background_color">
+    <div class="block__featured-products__heading_text b-102710008-heading_color rich-text"><h4><strong>Featured Courses</strong></h4></div>
+    <div class="block__columns b-102710008-content_width">
+      
+        
+
+
+
+<!-- Featured Product Listing -->
+<div data-featured-product-type="Course" data-featured-product-id="1810652" class="featured-product-card card-style-grid block__column b-102710008-card_background_color b-102710008-card_border_color b-102710008-card_border_width b-102710008-card_border_radius b-102710008-card_text_alignment">
+  <a href="the-full-stack-react-course.html">
+    <!-- Featured Product Image, Name & Subtitle (everyone) -->
+    <div class="featured-product-card__image-container">
+      
+        <img src="images/2a1a06ef15de460c84a0a8d46be367e1-eac3787aa3054b5995d00bd4e1d498c4" role="presentation">
+      
+    </div>
+    <div class="featured-product-card__content">
+      <h3 class="featured-product-card__content__title" title="The Full Stack React Course">
+        
+          The Full Stack React Course
+        
+      </h3>
+
+      
+        <!-- Progress bar (enrolled users) -->
+        <div aria-hidden="true" class="featured-product-card__progressbar hidden">
+          <div role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-labelledby="percent-complete-1810652" class="featured-product-card__progressbar-fill"></div>
+        </div>
+      
+
+      <!-- Subtitle (unenrolled users) -->
+      <h4 class="featured-product-card__content__subtitle" title="Learn to create a full E-Commerce App With React and Next.js">
+        
+          Learn to create a full E-Commerce App With React and Next.js
+        
+      </h4>
+      <div class="featured-product-card__meta">
+        <!-- Bundle v1 Info (everyone) -->
+        
+          <!-- Author Image and Name (everyone) -->
+          <div class="featured-product-card__meta__item featured-product-card__author">
+            
+              <img src="images/qQBTYzGzTg2Ywy703tIN" alt="DevelopedByEd">
+            
+            <p class="featured-product-card__author__name" title="DevelopedByEd">
+              
+                DevelopedByEd
+              
+            </p>
+          </div>
+        
+
+        
+          <!-- Progress percentage (enrolled users) -->
+          <div class="featured-product-card__meta__item featured-product-card__progress hidden" aria-hidden="true">
+            <span class="featured-product-card__percentage" id="percent-complete-1810652" data-featured-product-id="1810652">
+              %
+            </span>
+            COMPLETE
+          </div>
+        
+
+        <!-- Price (unenrolled users) -->
+        <p data-include-vat-price="4083496" class="featured-product-card__meta__item featured-product-card__price">
+          
+            $49.99
+          
+        </p>
+      </div>
+    </div>
+  </a>
+</div>
+
+      
+        
+
+
+
+<!-- Featured Product Listing -->
+<div data-featured-product-type="Course" data-featured-product-id="844150" class="featured-product-card card-style-grid block__column b-102710008-card_background_color b-102710008-card_border_color b-102710008-card_border_width b-102710008-card_border_radius b-102710008-card_text_alignment">
+  <a href="the-creative-javascript-course.html">
+    <!-- Featured Product Image, Name & Subtitle (everyone) -->
+    <div class="featured-product-card__image-container">
+      
+        <img src="images/file-4Q0byV2QfCLbgoDS7djA" role="presentation">
+      
+    </div>
+    <div class="featured-product-card__content">
+      <h3 class="featured-product-card__content__title" title="The Creative Javascript Course">
+        
+          The Creative Javascript Course
+        
+      </h3>
+
+      
+        <!-- Progress bar (enrolled users) -->
+        <div aria-hidden="true" class="featured-product-card__progressbar hidden">
+          <div role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-labelledby="percent-complete-844150" class="featured-product-card__progressbar-fill"></div>
+        </div>
+      
+
+      <!-- Subtitle (unenrolled users) -->
+      <h4 class="featured-product-card__content__subtitle" title="From Beginner Javascript To Building Awesome Web Apps and Websites!">
+        
+          From Beginner Javascript To Building Awesome Web Apps and Websites!
+        
+      </h4>
+      <div class="featured-product-card__meta">
+        <!-- Bundle v1 Info (everyone) -->
+        
+          <!-- Author Image and Name (everyone) -->
+          <div class="featured-product-card__meta__item featured-product-card__author">
+            
+              <img src="images/qQBTYzGzTg2Ywy703tIN" alt="DevelopedByEd">
+            
+            <p class="featured-product-card__author__name" title="DevelopedByEd">
+              
+                DevelopedByEd
+              
+            </p>
+          </div>
+        
+
+        
+          <!-- Progress percentage (enrolled users) -->
+          <div class="featured-product-card__meta__item featured-product-card__progress hidden" aria-hidden="true">
+            <span class="featured-product-card__percentage" id="percent-complete-844150" data-featured-product-id="844150">
+              %
+            </span>
+            COMPLETE
+          </div>
+        
+
+        <!-- Price (unenrolled users) -->
+        <p data-include-vat-price="2646495" class="featured-product-card__meta__item featured-product-card__price">
+          
+            $29.99
+          
+        </p>
+      </div>
+    </div>
+  </a>
+</div>
+
+      
+        
+
+
+
+<!-- Featured Product Listing -->
+<div data-featured-product-type="Course" data-featured-product-id="1203573" class="featured-product-card card-style-grid block__column b-102710008-card_background_color b-102710008-card_border_color b-102710008-card_border_width b-102710008-card_border_radius b-102710008-card_text_alignment">
+  <a href="the-creative-react-and-redux-course.html">
+    <!-- Featured Product Image, Name & Subtitle (everyone) -->
+    <div class="featured-product-card__image-container">
+      
+        <img src="images/file-S5atf80QTb2tZOScHsiW" role="presentation">
+      
+    </div>
+    <div class="featured-product-card__content">
+      <h3 class="featured-product-card__content__title" title="The Creative React and Redux Course">
+        
+          The Creative React and Redux Course
+        
+      </h3>
+
+      
+        <!-- Progress bar (enrolled users) -->
+        <div aria-hidden="true" class="featured-product-card__progressbar hidden">
+          <div role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-labelledby="percent-complete-1203573" class="featured-product-card__progressbar-fill"></div>
+        </div>
+      
+
+      <!-- Subtitle (unenrolled users) -->
+      <h4 class="featured-product-card__content__subtitle" title="Build 3 Awesome Web Applications With React!">
+        
+          Build 3 Awesome Web Applications With React!
+        
+      </h4>
+      <div class="featured-product-card__meta">
+        <!-- Bundle v1 Info (everyone) -->
+        
+          <!-- Author Image and Name (everyone) -->
+          <div class="featured-product-card__meta__item featured-product-card__author">
+            
+              <img src="images/qQBTYzGzTg2Ywy703tIN" alt="DevelopedByEd">
+            
+            <p class="featured-product-card__author__name" title="DevelopedByEd">
+              
+                DevelopedByEd
+              
+            </p>
+          </div>
+        
+
+        
+          <!-- Progress percentage (enrolled users) -->
+          <div class="featured-product-card__meta__item featured-product-card__progress hidden" aria-hidden="true">
+            <span class="featured-product-card__percentage" id="percent-complete-1203573" data-featured-product-id="1203573">
+              %
+            </span>
+            COMPLETE
+          </div>
+        
+
+        <!-- Price (unenrolled users) -->
+        <p data-include-vat-price="2592704" class="featured-product-card__meta__item featured-product-card__price">
+          
+            $29.99
+          
+        </p>
+      </div>
+    </div>
+  </a>
+</div>
+
+      
+    </div>
+    
+      <div class="block__featured-products__button">
+        <a href="courses.html">
+          <button class="base-button b-102710008-button_border_radius">
+            View All Products
+          </button>
+        </a>
+      </div>
+    
+  </section>
+
+
+
+      
+        </div>
+      
+
+    
+  
+
+
+  
+    <!-- in live preview mode we add an extra wrapper around each block, and remove the `block.show` check -->
+
+  
+    
+
+      <style type="text/css">.b-102710009-top { padding-top: 22.400000000000002px; } .b-102710009-bottom { padding-bottom: 22.400000000000002px; } .b-102710009-content_width { width: 960px; } .b-102710009-heading_color { color: #36414D; } .b-102710009-background_color { background-color: #FFFFFF; } .b-102710009-description_color { color: #36414D; }</style>
+
+      
+        <div class="course-block block video  " id="block-102710009">
+      
+
+        
+
+
+<style>
+  @media screen and (min-width: 768px) {
+    .b-102710009-top {
+      padding-top: 40px;
+    }
+    .b-102710009-bottom {
+      padding-bottom: 40px;
+    }
+  }
+</style>
+
+<section class="container bl b-102710009-top b-102710009-bottom b-102710009-background_color">
+  <div class="block__video b-102710009-content_width">
+    <div class="block__video__text-wrapper rich-text">
+      
+        <div class="block__video__heading_text b-102710009-heading_color">
+          <h4><strong>New Release</strong></h4>
+        </div>
+      
+      
+        <div class="b-102710009-description_color">
+          <p>The Full Stack React Course<br class="softbreak"></p>
+        </div>
+    
+    </div>
+    
+            <div class="wistia_responsive_padding">
+        <div class="wistia_responsive_wrapper">
+          <div class="hotmart_video_player public-hotmart-video" data-asset-id="609913" data-asset-type="video_asset">
+          </div>
+        </div>
+      </div>
+
+    
+  </div>
+</section>
+
+
+      
+        </div>
+      
+
+    
+  
+
+
+  
+    <!-- in live preview mode we add an extra wrapper around each block, and remove the `block.show` check -->
+
+  
+    
+
+      <style type="text/css">.b-102710010-top { padding-top: 22.400000000000002px; } .b-102710010-bottom { padding-bottom: 22.400000000000002px; } .b-102710010-text_color { color: #36414D; } .b-102710010-background_color { background-color: #FFFFFF; } .b-102710010-heading_text_color { color: #36414D; }</style>
+
+      
+        <div class="course-block block email_leads_form  " id="block-102710010">
+      
+
+        
+
+<style>
+@media screen and (min-width: 768px) {
+  .b-102710010-top {
+    padding-top: 40px;
+  }
+  .b-102710010-bottom {
+    padding-bottom: 40px;
+  }
+}
+</style>
+<section class="block__empty-state block__email_leads bl b-102710010-top b-102710010-bottom b-102710010-background_color b-102710010-text_color">
+  <form onsubmit="return false" data-block-id="102710010" data-source="Email Leads" data-ss-school-id="357209">
+      <h4 class="b-102710010-heading_text_color"><strong>Let&rsquo;s keep in touch</strong></h4>
+      <p>Subscribe to the mailing list and receive the latest updates</p>
+      <fieldset>
+        <div>
+          <label for="email">Email Address</label>
+          <input type="email" name="email" class="block__email_leads__input" required>
+        </div>
+        
+          <div class="block__email_leads__checkbox_wrapper">
+            <input type="checkbox" name="consent" class="block__email_leads__checkbox" required>
+            <label for="consent">
+              By clicking this checkbox, you consent to receiving emails from this school or course
+            </label>
+          </div>
+        
+      </fieldset>
+
+      <button class="base-button" type="submit">Subscribe</button>
+      <p class="disclaimer_text">We respect your privacy.</p>
+      <div class="block__email_leads__error"></div>
+  </form>
+  <div id="status-102710010" class="block__email_leads__success" hidden>
+    Check your inbox to confirm your subscription
+  </div>
+</section>
+
+
+      
+        </div>
+      
+
+    
+  
+
+
+  
+
+  
+    </div>
+  
+
+
+
+
+
+
+
+
+      </main>
+      
+        
+<style id="footerStyles">
+  :root {
+    --footer_width: 960px;
+  }
+</style>
+<footer class="">
+  <div class="footer">
+    <div class="footer__wrapper">
+      <div class="footer__inner">
+        <ul class="footer__list">
+          <li class="footer__copyright">
+            &copy;
+            developedbyed | Creative Programming and Design Courses
+            2022
+          </li>
+          
+              
+                  <li>
+                      <a href="https://www.instagram.com/developedbyed/" target="_blank">
+                      Instagram
+                      </a>
+                  </li>
+              
+                  <li>
+                      <a href="https://twitter.com/developedbyed" target="_blank">
+                      Twitter
+                      </a>
+                  </li>
+              
+                  <li>
+                      <a href="https://www.youtube.com/c/dev_ed" target="_blank">
+                      Youtube
+                      </a>
+                  </li>
+              
+          
+        </ul>
+        <ul class="footer__list legal-links">
+          <li>
+            <a href="terms.html">
+            Terms of Use
+            </a>
+          </li>
+          <li>
+            <a href="privacy.html">
+            Privacy Policy
+            </a>
+          </li>
+          
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer></div>
+
+
+
+
+      
+    
+    <script>
+      if (!Element.prototype.closest) {
+        Element.prototype.closest = function(s) {
+          let el = this;
+          do {
+            if (el.matches(s)) return el;
+            el = el.parentElement || el.parentNode;
+          } while (el !== null && el.nodeType === 1);
+          return null;
+        };
+      }
+      const offMenu = event => {
+      if (event.target.closest('.navbar__menu')) return
+      document
+        .querySelectorAll('.menu')
+        .forEach(item => {
+          item.classList.add('hidden')
+          item.setAttribute('aria-hidden', 'true')
+        })
+      }
+      const toggleMenu = id => {
+  const el = document.getElementById(id)
+  if (el.classList.contains('hidden')) {
+    document
+      .querySelectorAll('.inner-menu')
+      .forEach(item => {
+        item.classList.add('hidden')
+        item.setAttribute('aria-hidden', 'true')
+      })
+    el.classList.remove('hidden')
+    el.setAttribute('aria-hidden', 'false')
+  } else {
+    el.classList.add('hidden')
+    el.setAttribute('aria-hidden', 'true')
+  }
+  !el.classList.contains('hidden') && el.focus()
+}
+
+      // toggle open class for v2 preview bar dropdown menu
+      const v2Dropdown = document.getElementsByClassName('v2-dropdown')[0]
+      const v2DropdownTrigger = document.querySelector('.v2-dropdown .menu-trigger')
+      // if the preview bar dropdown exists, add event listener to toggle preview menu
+      if (!!v2Dropdown) {
+        v2DropdownTrigger.addEventListener('click', () => {
+          v2Dropdown.classList.toggle('open')
+        })
+      }
+
+      const domBody = document.body
+      const usingMouse = 'using-mouse'
+      domBody.addEventListener('mousedown', () => {
+        domBody.classList.add(usingMouse)
+      })
+      domBody.addEventListener('keydown', () => {
+        domBody.classList.remove(usingMouse)
+      })
+
+      const headerEl = document.querySelector('#navbar')
+      const topHook = document.querySelector('#top')
+      if (
+        "IntersectionObserver" in window
+      ) {
+        const observer = new IntersectionObserver(entries => {
+          if (entries[0].boundingClientRect.y < 0) {
+            headerEl.classList.remove('at-top')
+          } else {
+            headerEl.classList.add('at-top')
+          }
+        },{threshold: 1});
+        observer.observe(topHook)
+      }
+    </script>
+
+    
+
+  <script>(function(){window['__CF$cv$params']={r:'733348189f22c49d',m:'crTt65hnOTYJgLpwZGjYWTaG.AsItN.wHdF85BwkMmI-1659238501-0-Af8f6nsgsTJWzDOqx/gqgLsreCfgjWZPiimcd3vvy0mEfBBG8EcB1FoxqG+suiVfNiLaZJFj0GftBgQKwEzoojce64ayVGOKCCxcrKGIgOCOYwgEwZiPXS/oOMjixdGqsg==',s:[0xbf602cb37a,0x7083fd1fff],}})();</script></body>
+</html>
